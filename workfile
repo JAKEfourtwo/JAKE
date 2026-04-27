@@ -1,0 +1,8 @@
+# 1. Ingest knowledge
+/jake-ingest
+
+# 2. Query intelligence
+/jake-query
+
+# 3. Maintain system
+/jake-lint
