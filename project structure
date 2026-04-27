@@ -1,0 +1,12 @@
+jake/
+├── raw/                # Source inputs
+├── wiki/               # Structured knowledge
+│   ├── sources/
+│   ├── entities/
+│   ├── concepts/
+│   ├── synthesis/
+│   ├── index.md
+│   └── log.md
+├── graph/              # Knowledge graph layer
+├── output/             # Reports
+└── agents/             # AI skills
