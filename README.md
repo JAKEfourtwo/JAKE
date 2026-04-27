@@ -4,7 +4,7 @@ The Intelligence Layer for Structured, Compounding Knowledge
 
 > Control intelligence. Deploy knowledge. Execute faster.
 
-Janus Knowledge OS (J.A.K.E) is a **local-first AI knowledge graph engine** that transforms raw information into structured, connected, and actionable intelligence.
+Janus AI Knowledge Engine (J.A.K.E) is a **local-first AI knowledge graph engine** that transforms raw information into structured, connected, and actionable intelligence.
 
 Unlike traditional RAG systems that retrieve text chunks, J.A.K.E builds a **living knowledge system** that compounds over time.
 
