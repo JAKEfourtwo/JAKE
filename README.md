@@ -1,6 +1,6 @@
 # JAKE
 The Intelligence Layer for Structured, Compounding Knowledge
-# 🧠 Janus Knowledge OS (J.A.K.E)
+# 🧠 Janus AI Knowledge Engine (J.A.K.E)
 
 > Control intelligence. Deploy knowledge. Execute faster.
 
