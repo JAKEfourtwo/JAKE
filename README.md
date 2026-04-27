@@ -1,4 +1,4 @@
-# JAKE
+# J.A.K.E
 The Intelligence Layer for Structured, Compounding Knowledge
 # 🧠 Janus AI Knowledge Engine (J.A.K.E)
 
