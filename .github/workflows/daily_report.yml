@@ -1,0 +1,34 @@
+name: Daily Intelligence Report
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # Every day at 8:00 UTC
+  workflow_dispatch: true
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Generate Daily Report
+        run: |
+          python -c "
+          from core.intelligence_report import IntelligenceReport
+          report = IntelligenceReport().generate_daily_report()
+          print(report)
+          " > daily_report.md
+      
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-intelligence-report
+          path: daily_report.md
