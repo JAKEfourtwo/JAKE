@@ -1,0 +1,52 @@
+{
+  "entities": {
+    "Person": {
+      "description": "Individual human",
+      "attributes": ["name", "role", "affiliation"]
+    },
+    "Organization": {
+      "description": "Company, institution, or group",
+      "attributes": ["name", "type", "location"]
+    },
+    "Concept": {
+      "description": "Abstract idea or framework",
+      "attributes": ["name", "domain"]
+    },
+    "Event": {
+      "description": "Time-bound occurrence",
+      "attributes": ["name", "date", "location"]
+    },
+    "Location": {
+      "description": "Geographic or virtual place",
+      "attributes": ["name", "type"]
+    }
+  },
+  "relations": {
+    "works_for": {
+      "description": "Employment or affiliation relationship",
+      "domain": "Person",
+      "range": "Organization"
+    },
+    "located_in": {
+      "description": "Physical or logical location",
+      "domain": ["Person", "Organization", "Event"],
+      "range": "Location"
+    },
+    "related_to": {
+      "description": "General semantic connection",
+      "domain": "*",
+      "range": "*"
+    },
+    "part_of": {
+      "description": "Hierarchical containment",
+      "domain": "*",
+      "range": "*"
+    },
+    "influences": {
+      "description": "Causal or influential link",
+      "domain": "*",
+      "range": "*"
+    }
+  },
+  "version": "0.1.0"
+}
