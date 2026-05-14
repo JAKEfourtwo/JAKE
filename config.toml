@@ -1,0 +1,13 @@
+[llm]
+model = "qwen2.5:32b"          # Change to your preferred model
+embedding_model = "nomic-embed-text"
+
+[paths]
+root = "."
+raw_dir = "raw"
+wiki_dir = "wiki"
+graph_db = "graph/triples.db"
+
+[ingest]
+max_chunk_size = 8000
+confidence_threshold = 0.7
